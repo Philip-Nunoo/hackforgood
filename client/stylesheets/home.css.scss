@@ -74,7 +74,7 @@ button{
 	border: solid 1px;
 	padding: 12px 12px;
 }
-
+/*
 div[id^="component"]
 {
 	float:left; 
@@ -85,7 +85,7 @@ div[id^="component"]
 	margin-bottom: 9px;
 	background-color: #FFF;
 }
-
+*/
 footer{
 	text-align: center;
 	padding: 10px;
@@ -140,6 +140,15 @@ section.page{
 			font-weight: 100;
 		}
 
+		.content{
+			font-size: 18px;
+			text-align: center;
+			line-height: 1.2em;
+			letter-spacing: 1px;
+			/* font-weight: 500; */
+			color: #0D0D0D;
+		}
+
 		.images{
 			text-align: center;
 			margin-top: 55px;
@@ -183,6 +192,16 @@ section.page{
 			margin-bottom: 46px;
 			font-weight: 100;
 		}
+
+		.content{
+			font-size: 20px;
+			text-align: left;
+			line-height: 1.5em;
+			letter-spacing: 1px;
+			/* font-weight: 500; */
+			color: #9D9D9D;
+		}
+
 	}
 
 

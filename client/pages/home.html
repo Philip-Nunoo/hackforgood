@@ -1,10 +1,13 @@
 <!-- home.html -->
-<template name="Home">
+<template name="home">
+	<script type="text/javascript">
+	new WOW().init();
+	</script>
 	<section class="page" id="header">
 		<div class="holder">
 			<div class="pad">
 				<div class="title">
-					Welcome To Flowsheet
+					Welcome To Traces
 				</div>
 				<div class="sub-title">
 					Automatic people counting for public areas and institutions.
@@ -24,9 +27,9 @@
 					</div>
 				</div>
 				<div class="images">
-					<img src="/imgs/bank.png"/>
-					<img src="/imgs/airport1.png"/>
-					<img src="/imgs/school.png"/>
+					<img src="/imgs/bank.png" class="wow fadeIn" />
+					<img src="/imgs/airport1.png" class="wow fadeIn" />
+					<img src="/imgs/school.png" class="wow fadeIn" />
 				</div>
 			</div>
 		</div>
@@ -41,7 +44,7 @@
 						moving and entering into a space or an environment
 					</div>
 				</div>
-				<div class="large-7 columns">
+				<div class="large-7 columns wow flipInY">
 					<img src="/imgs/dashboard.png"/>
 				</div>
 			</div>
@@ -51,10 +54,10 @@
 		<div class="large-9 large-centered columns">
 			<div class="title">Instant Notifier</div>			
 			<div class="row">
-				<div class="large-7 columns">
+				<div class="large-7 columns wow slideInLeft">
 					<img src="/imgs/feature-phone.png">
 				</div>
-				<div class="large-5 columns">
+				<div class="large-5 columns wow slideInRight" data-wow-offset="10"  data-wow-delay="0.5s">
 					<div class="content">
 						We provide an automatic alert system to administrators on incidents and ocurrences happening around the industries. This helps in making strategic and impactful decisions on time.
 					</div>
