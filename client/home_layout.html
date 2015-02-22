@@ -1,0 +1,26 @@
+<template name="HomeLayout">
+	<nav class='top-bar'>
+		<div class="row">
+			<div class="large-11 large-centered columns">
+				<section class="top-bar-section">
+					<ul class="left">
+						<li class="title name"><a href="{{pathFor 'home'}}">flow sheet</a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="{{pathFor 'dashboard'}}">Dashboard</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</nav>
+	<div style="height: 100%;">
+		{{> yield}}
+		<footer>
+			<div class="row">
+				&copy; 2015
+			</div>
+		</footer>
+	</div>
+	<div class="clear"></div>
+	
+</template>

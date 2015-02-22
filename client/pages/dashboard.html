@@ -1,0 +1,32 @@
+<!-- Dashboard.html -->
+<template name="Dashboard">
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+	
+	<div>
+		<div>
+			{{# autoForm collection="Informations" id="insertBookForm" type="insert"}}
+			{{> afQuickField name='checkInTime'}}
+			{{> afQuickField name='studentId'}}
+			<button type="submit" class="btn btn-primary tiny">Insert</button>
+			{{/autoForm}}
+		</div>
+		{{> chartTemplate}}
+		<table>
+			<thead>
+				<tr>
+					<th>Student id</th>
+					<th>Last checkin</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{>AllCheckIns_table}}
+			</tbody>
+		</table>
+	</div>
+</template>
+
+<template name='chartTemplate'>
+	Chart
+	<div id="completion-gauge" style="width: 100%; height: 500px;"></div>
+</template>

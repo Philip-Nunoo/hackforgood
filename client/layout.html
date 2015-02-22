@@ -1,0 +1,19 @@
+<!-- layout.html -->
+<template name="Layout">
+	<div class="large-9 large-centered columns">
+		<div class="large-3 columns">
+			Menu
+			<ul>
+			<li><a href="{{pathFor 'home'}}">Home</a></li>
+			<li><a href="">View Charts</a></li>
+			<li><a href="">Add New Student</a></li>
+			<li><a href="">Display all Students</a></li>
+			</ul>
+		</div>
+		<div class="large-9 columns">
+			<div>Welcome</div>
+			{{>yield}}
+		</div>
+		<div class="clear"></div>
+	</div>
+</template>

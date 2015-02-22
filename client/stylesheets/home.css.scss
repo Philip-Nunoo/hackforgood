@@ -1,0 +1,189 @@
+/*home.css.scss*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,700italic,900);
+$white : #FFFFFF;
+$black : #000000;
+$fontFamily: 'Roboto', sans-serif;
+
+body{
+	font-family: $fontFamily;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $fontFamily;
+	font-weight: 100;
+}
+
+.clear{
+	clear: both;
+}
+
+button{
+	font-family: $fontFamily;
+}
+
+.top-bar{
+	background-color: $white;
+	box-shadow: 0px 1px 1px #AAA;
+	height: auto;
+
+	ul{
+		li:not(.has-form) a:not(.button){
+			background-color: transparent;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+
+		li{
+			background-color: transparent;
+			a{
+				background-color: transparent;
+				color: $black;
+				font-family: $fontFamily;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+#slideshow{
+	width: 100%;
+	height: 600px;
+	background-color: rgba(20,2,200,0.2);
+
+	.head{
+		font-size: 30px;
+	}
+}
+
+#call{
+	padding: 12% 0px;
+	text-align: center;
+}
+
+.newForm{
+	min-height: 400px;
+	border: dashed 2px #888;
+	border-radius: 5px;
+}
+
+#draggedForm{
+	background-color: #F9F9F9;
+	width: 100%;
+	min-height: 400px;
+	height: 100%;
+	border: solid 1px;
+	padding: 12px 12px;
+}
+
+div[id^="component"]
+{
+	float:left; 
+	width:100%; 
+	padding:3px 12px; 
+	border:1px dotted #333333; 
+	border-radius: 4px;
+	margin-bottom: 9px;
+	background-color: #FFF;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+	color: #FFF;
+	background-color: #000;
+	font-size: 13px;
+}
+
+section.page{
+	padding: 6% 0px;
+
+	&#header{
+		height: 100%;
+		/*background-color: blue;*/
+		background-image: url('imgs/bg1.jpg');
+
+		.holder{
+			width: fit-content;
+			width: -moz-fit-content;
+			width: -webkit-fit-content;
+			margin: auto;
+
+			.pad{
+				padding-top: 20%;
+			}
+
+			.title{
+				font-size: 80px;
+				color: #FFF;
+				font-weight: 100;
+				text-shadow: 0px 0px 4px #000;
+			}
+
+			.sub-title{
+				color: #FFF;
+				margin-top: 25px;
+				text-align: center;
+				font-size: 22px;
+				text-shadow: 0px 0px 1px #000;
+			}
+		}
+	}
+
+	&#how{
+		text-align: center;
+		padding: 4% 0px;
+
+		.title{
+			font-size: 60px;
+			text-align: center;
+			margin-bottom: 46px;
+			font-weight: 100;
+		}
+
+		.images{
+			text-align: center;
+			margin-top: 55px;
+			img{
+				width: (100%/8);
+				display: inline-block;
+				margin: 0px 10%;
+			}
+		}
+	}
+
+	&#dashboard{
+		.title{
+			font-size: 60px;
+			text-align: center;
+			margin-bottom: 46px;
+			font-weight: 100;
+		}
+
+		img{
+
+		}
+
+		.content{
+			font-size: 20px;
+			text-align: right;
+			line-height: 1.5em;
+			letter-spacing: 1px;
+			/* font-weight: 500; */
+			color: #9D9D9D;
+		}
+		display: block;
+		padding: 4% 0px;
+		background-color: #F1F1F1;
+	}
+
+	&#instant_notifier{
+		.title{
+			font-size: 60px;
+			text-align: center;
+			margin-bottom: 46px;
+			font-weight: 100;
+		}
+	}
+
+
+}

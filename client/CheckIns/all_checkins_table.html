@@ -1,0 +1,13 @@
+<!-- AllCheckIns_table -->
+<template name="AllCheckIns_table">
+	{{#each data}}
+	<tr>
+		<td>{{checkInTime}}</td>
+		<td>{{studentId}}</td>
+	</tr>
+	{{else}}
+	<tr>
+		<td colspan="2">No Data found</td>
+	</tr>
+	{{/each}}
+</template>
